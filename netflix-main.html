@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="netflix-styles.css"/>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="scrolling-effect">
+    <div class="header">
+        <div class="left-half">
+            
+            <div class="Movie-info">
+                <h1><img class="logo"  src="images-netflix/netflix-logo.jpg"><span class="series">Series</span><br><img class="money-heist-logo" src="images-netflix/final-money-heist-logo.jpg">
+                <p class="rating-info">
+                    <img class="imdb-logo" src="images-netflix/imbd.png"/>
+                    8.8/10 &nbsp; &nbsp; <br>🔥 <span class="views">2B+</span> Streams
+                </p>
+                <div class="buttons">
+                    <button class="play">Play</button>
+                    <button class="trailer">Watch Trailer</button>
+                </div>
+            </div>
+        </div>
+        <div class="right-half">
+            <img class="movie-poster" src="images-netflix/money-heist-poster.jpg" />
+        </div>
+        </div>
+        </div>
+            <div class="sidebar">
+        <div class="sidebar-link">
+            <div class="search">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path clip-rule="evenodd" d="M16.296 16.996a8 8 0 11.707-.708l3.909 3.91-.707.707-3.909-3.909zM18 11a7 7 0 00-14 0 7 7 0 1014 0z" fill-rule="evenodd"></path></svg>
+            </div>
+        </div>
+        <div class="sidebar-link">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path clip-rule="evenodd" d="M22.146 11.146a.5.5 0 01-.353.854H20v7.5a1.5 1.5 0 01-1.5 1.5H14v-8h-4v8H5.5A1.5 1.5 0 014 19.5V12H2.207a.5.5 0 01-.353-.854L12 1l10.146 10.146Z" fill-rule="evenodd"></path></svg>
+            </div>
+        </div>
+        <div class="sidebar-link">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="white" stroke-width="1.8" viewBox="0 0 24 24">
+                    <rect x="3" y="5" width="18" height="14" rx="2" ry="2" stroke="white"/>
+                    <path d="M3 9h18" stroke="white"/>
+                    <path d="M4 5l2 4" stroke="white"/>
+                    <path d="M8 5l2 4" stroke="white"/>
+                    <path d="M12 5l2 4" stroke="white"/>
+                    <path d="M16 5l2 4" stroke="white"/>
+                </svg>
+
+            </div>
+        </div>    <div class="sidebar-link">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
+                    <path d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h6v2H6v2h12v-2h-3v-2h6c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 14H3V5h18v12z"/>
+                </svg>
+
+            </div>
+        </div>
+        <div class="sidebar-link">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M3 17l6-6 4 4L21 7" />
+                    <path d="M14 7h7v7" />
+                </svg>
+
+            </div>
+        </div>
+        <div class="sidebar-link">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
+                    <line x1="12" y1="5" x2="12" y2="19" stroke="white" stroke-width="2"/>
+                    <line x1="5" y1="12" x2="19" y2="12" stroke="white" stroke-width="2"/>
+                </svg>
+ 
+            </div>
+        </div>
+        <div class="sidebar-link">
+            <div>
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
+                    <path d="M16 3h5v5" fill="none" stroke="white" stroke-width="2"/>
+                    <path d="M4 4l16 16" stroke="white" stroke-width="2"/>
+                    <path d="M21 16v5h-5" fill="none" stroke="white" stroke-width="2"/>
+                    <path d="M4 20l7-7" stroke="white" stroke-width="2"/>
+                </svg>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="lavda">
+    <div>
+        <p class="headline">New this week</p>
+
+    </div>
+
+
+
+    <div class="new-releases-movies">
+ 
+       <button class="new-releases">
+        <img class="movie-1"  src="images-netflix/The_Mother_poster.jpg" />
+        <button id="scrollRightBtn"  class="scrollRight" onclick="scrollRight()">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="white">
+                <path d="M9 6l6 6-6 6V6z"/>
+            </svg>
+        </button>
+
+        <button id="scrollLeftBtn"  class="scrollLeft" onclick="scrollRight()">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="white">
+                <path d="M15 6l-6 6 6 6V6z" />
+            </svg>
+        </button>
+
+        </button>
+        </button>
+        <button class="new-releases">
+        <img class="movie-2" src="images-netflix/movie-2.jpg" /> 
+        </button>
+        <button class="new-releases">
+        <img class="movie-3" src="images-netflix/movie-3.jpg" />  
+        </button>
+        <button class="new-releases">
+        <img class="movie-4" src="images-netflix/movie-4.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-5" src="images-netflix/movie-5.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-6" src="images-netflix/movie-6.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-7" src="images-netflix/movie-7.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-8" src="images-netflix/movie-8.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-9" src="images-netflix/movie-9.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-10" src="images-netflix/movie-1-1.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-1-1" src="images-netflix/movie-1-2.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-1-2" src="images-netflix/movie-1-3.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-1-3" src="images-netflix/movie-1-4.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-1-4" src="images-netflix/movie-1-5.jpg" />
+        </button>
+         
+    </div>
+
+    <div>
+        <p class="headline-2">Trending Now</p>
+    </div>
+
+    <div class="trending-now">
+           
+        <button class="trending-now-movies">
+        <img class="movie-1"  src="images-netflix/movie-10.jpg" />
+        <button id="scrollRightSideBtn"  class="scrollRight" onclick="scrollRight()">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="white">
+                <path d="M9 6l6 6-6 6V6z"/>
+            </svg>
+        </button>
+
+        <button id="scrollLeftSideBtn"  class="scrollLeft" onclick="scrollRight()">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="white">
+                <path d="M15 6l-6 6 6 6V6z" />
+            </svg>
+        </button>
+
+        </button>
+        </button>
+        <button class="new-releases">
+        <img class="movie-2" src="images-netflix/movie-22.jpg" /> 
+        </button>
+        <button class="new-releases">
+        <img class="movie-3" src="images-netflix/movie-23.jpg" />  
+        </button>
+        <button class="new-releases">
+        <img class="movie-4" src="images-netflix/movie-24.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-5" src="images-netflix/movie-25.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-6" src="images-netflix/movie-26.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-7" src="images-netflix/movie-27.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-8" src="images-netflix/movie-28.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-9" src="images-netflix/movie-29.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-10" src="images-netflix/movie-3-1.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-1-1" src="images-netflix/movie-3-2.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-1-2" src="images-netflix/movie-3-3.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-1-3" src="images-netflix/movie-3-4.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-1-4" src="images-netflix/movie-3-5.jpg" />
+        </button>
+    </div>
+
+    <div>
+        <p class="headline-3">Top 10 SERIES on NETFLIX</p>
+    </div>
+
+    <div class="top10series">
+        <button class="top-10-series">
+        <img class="movie-1"  src="images-netflix/movie-30.jpg" />
+        <button id="scrollRightSidBtn"  class="scrollRight" onclick="scrollRight()">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="white">
+                <path d="M9 6l6 6-6 6V6z"/>
+            </svg>
+        </button>
+
+        <button id="scrollLeftSidBtn"  class="scrollLeft" onclick="scrollRight()">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="white">
+                <path d="M15 6l-6 6 6 6V6z" />
+            </svg>
+        </button>
+
+        </button>
+        </button>
+        <button class="new-releases">
+        <img class="movie-2" src="images-netflix/movie-12.jpg" /> 
+        </button>
+        <button class="new-releases">
+        <img class="movie-3" src="images-netflix/movie-13.jpg" />  
+        </button>
+        <button class="new-releases">
+        <img class="movie-4" src="images-netflix/movie-14.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-5" src="images-netflix/movie-15.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-6" src="images-netflix/movie-16.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-7" src="images-netflix/movie-17.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-8" src="images-netflix/movie-18.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-9" src="images-netflix/movie-19.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-1-1" src="images-netflix/movie-2-1.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-1-2" src="images-netflix/movie-2-2.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-1-3" src="images-netflix/movie-2-3.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-1-4" src="images-netflix/movie-2-4.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-1-5" src="images-netflix/movie-2-5.jpg" />
+        </button>
+    </div>
+
+    <div>
+        <p class="headline-4">You May Like</p>
+    </div>
+
+    <div class="recommended">
+        <button class="you-may-like">
+        <img class="movie-1"  src="images-netflix/movie-20.jpg" />
+        <button id="scrollRightSiBtn"  class="scrollRight" onclick="scrollRight()">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="white">
+                <path d="M9 6l6 6-6 6V6z"/>
+            </svg>
+        </button>
+
+        <button id="scrollLeftSiBtn"  class="scrollLeft" onclick="scrollRight()">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="white">
+                <path d="M15 6l-6 6 6 6V6z" />
+            </svg>
+        </button>
+
+        </button>
+        </button>
+        <button class="new-releases">
+        <img class="movie-2" src="images-netflix/movie-21.jpg" /> 
+        </button>
+        <button class="new-releases">
+        <img class="movie-3" src="images-netflix/movie-22.jpg" />  
+        </button>
+        <button class="new-releases">
+        <img class="movie-4" src="images-netflix/movie-23.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-5" src="images-netflix/movie-24.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-6" src="images-netflix/movie-25.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-7" src="images-netflix/movie-26.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-8" src="images-netflix/movie-27.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-9" src="images-netflix/movie-28.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-1-1" src="images-netflix/movie-4-1.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-1-2" src="images-netflix/movie-4-2.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-1-3" src="images-netflix/movie-4-3.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-1-4" src="images-netflix/movie-4-4.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-1-5" src="images-netflix/movie-4-5.jpg" />
+        </button>
+    </div>
+
+    <div>
+        <p class="headline-5">Top 10 MOVIES on NETFLIX</p>
+    </div>
+
+    <div class="top10movies">
+               <button class="top-10-movies">
+        <img class="movie-1"  src="images-netflix/movie-11.jpg" />
+        <button id="scrollRightSBtn"  class="scrollRight" onclick="scrollRight()">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="white">
+                <path d="M9 6l6 6-6 6V6z"/>
+            </svg>
+        </button>
+
+        <button id="scrollLeftSBtn"  class="scrollLeft" onclick="scrollRight()">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="white">
+                <path d="M15 6l-6 6 6 6V6z" />
+            </svg>
+        </button>
+
+        </button>
+        </button>
+        <button class="new-releases">
+        <img class="movie-2" src="images-netflix/movie-31.jpg" /> 
+        </button>
+        <button class="new-releases">
+        <img class="movie-3" src="images-netflix/movie-32.jpg" />  
+        </button>
+        <button class="new-releases">
+        <img class="movie-4" src="images-netflix/movie-33.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-5" src="images-netflix/movie-34.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-6" src="images-netflix/movie-35.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-7" src="images-netflix/movie-36.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-8" src="images-netflix/movie-37.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-9" src="images-netflix/movie-38.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-1-1" src="images-netflix/movie-5-1.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-1-2" src="images-netflix/movie-5-2.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-1-3" src="images-netflix/movie-5-3.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-1-4" src="images-netflix/movie-5-4.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-1-5" src="images-netflix/movie-5-5.jpg" />
+        </button>
+    </div>
+
+    <div>
+        <p class="headline-6">ANIME</p>
+    </div>
+
+    <div class="anime">
+               <button class="animes">
+        <img class="movie-1"  src="images-netflix/anime-1.jpg" />
+        <button id="scrollRightSIDEBtn"  class="scrollRight" onclick="scrollRight()">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="white">
+                <path d="M9 6l6 6-6 6V6z"/>
+            </svg>
+        </button>
+
+        <button id="scrollLeftSIDEBtn"  class="scrollLeft" onclick="scrollRight()">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="white">
+                <path d="M15 6l-6 6 6 6V6z" />
+            </svg>
+        </button>
+
+        </button>
+        </button>
+        <button class="new-releases">
+        <img class="movie-2" src="images-netflix/anime-2.jpg" /> 
+        </button>
+        <button class="new-releases">
+        <img class="movie-3" src="images-netflix/anime-3.jpg" />  
+        </button>
+        <button class="new-releases">
+        <img class="movie-4" src="images-netflix/anime-4.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-5" src="images-netflix/anime-5.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-6" src="images-netflix/anime-6.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-7" src="images-netflix/anime-7.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-8" src="images-netflix/anime-8.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-9" src="images-netflix/anime-9.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-1-1" src="images-netflix/anime-10.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-1-2" src="images-netflix/anime-11.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-1-3" src="images-netflix/anime-12.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-1-4" src="images-netflix/anime-13.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-1-5" src="images-netflix/anime-14.jpg" />
+        </button>
+    </div>
+
+    <div>
+        <p class="headline-7">Romantic TV SHOWS</p>
+    </div>
+
+    <div class="rom">
+               <button class="romantic">
+        <img class="movie-1"  src="images-netflix/rom-1.jpg" />
+        <button id="scrollRightSIDBtn"  class="scrollRight" onclick="scrollRight()">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="white">
+                <path d="M9 6l6 6-6 6V6z"/>
+            </svg>
+        </button>
+
+        <button id="scrollLeftSIDBtn"  class="scrollLeft" onclick="scrollRight()">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="white">
+                <path d="M15 6l-6 6 6 6V6z" />
+            </svg>
+        </button>
+
+        </button>
+        </button>
+        <button class="new-releases">
+        <img class="movie-2" src="images-netflix/rom-2.jpg" /> 
+        </button>
+        <button class="new-releases">
+        <img class="movie-3" src="images-netflix/rom-3.jpg" />  
+        </button>
+        <button class="new-releases">
+        <img class="movie-4" src="images-netflix/rom-4.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-5" src="images-netflix/rom-5.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-6" src="images-netflix/rom-6.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-7" src="images-netflix/rom-7.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-8" src="images-netflix/rom-8.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-9" src="images-netflix/rom-9.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-1-1" src="images-netflix/rom-10.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-1-2" src="images-netflix/rom-11.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-1-3" src="images-netflix/rom-12.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-1-4" src="images-netflix/rom-13.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-1-5" src="images-netflix/rom-14.jpg" />
+        </button>
+    </div>
+
+    <div>
+        <p class="headline-8">Award Winning Asian Kdrama</p>
+    </div>
+
+    <div class="rom">
+               <button class="romantic">
+        <img class="movie-1"  src="images-netflix/award-1.jpg" />
+        <button id="scrollRightSIBtn"  class="scrollRight" onclick="scrollRight()">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="white">
+                <path d="M9 6l6 6-6 6V6z"/>
+            </svg>
+        </button>
+
+        <button id="scrollLeftSIBtn"  class="scrollLeft" onclick="scrollRight()">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="white">
+                <path d="M15 6l-6 6 6 6V6z" />
+            </svg>
+        </button>
+
+        </button>
+        </button>
+        <button class="new-releases">
+        <img class="movie-2" src="images-netflix/award-2.jpg" /> 
+        </button>
+        <button class="new-releases">
+        <img class="movie-3" src="images-netflix/award-3.jpg" />  
+        </button>
+        <button class="new-releases">
+        <img class="movie-4" src="images-netflix/award-4.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-5" src="images-netflix/award-5.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-6" src="images-netflix/award-6.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-7" src="images-netflix/award-7.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-8" src="images-netflix/award-8.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-9" src="images-netflix/award-9.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-1-1" src="images-netflix/award-10.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-1-2" src="images-netflix/award-11.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-1-3" src="images-netflix/award-12.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-1-4" src="images-netflix/award-13.jpg" />
+        </button>
+        <button class="new-releases">
+        <img class="movie-1-5" src="images-netflix/award-14.jpg" />
+        </button>
+    </div>
+
+    </div>
+    </div>
+
+    <script>
+        document.getElementById("scrollRightBtn").addEventListener("click", function () {
+            window.scrollBy({
+                left: 3000,
+                behavior: "smooth"
+             });
+        });
+    </script>
+
+
+    <script>
+        document.getElementById("scrollLeftBtn").addEventListener("click", function () {
+            window.scrollBy({
+                left: -3000,
+                behavior: "smooth"
+             });
+        });
+    </script>
+
+    <script>
+        document.getElementById("scrollRightSideBtn").addEventListener("click", function () {
+            window.scrollBy({
+                left: 3000,
+                behavior: "smooth"
+             });
+        });
+    </script>
+
+
+    <script>
+        document.getElementById("scrollLeftSideBtn").addEventListener("click", function () {
+            window.scrollBy({
+                left: -3000,
+                behavior: "smooth"
+             });
+        });
+    </script>
+
+    <script>
+        document.getElementById("scrollRightSidBtn").addEventListener("click", function () {
+            window.scrollBy({
+                left: 3000,
+                behavior: "smooth"
+             });
+        });
+    </script>
+
+
+    <script>
+        document.getElementById("scrollLeftSidBtn").addEventListener("click", function () {
+            window.scrollBy({
+                left: -3000,
+                behavior: "smooth"
+             });
+        });
+    </script>
+
+    <script>
+        document.getElementById("scrollRightSiBtn").addEventListener("click", function () {
+            window.scrollBy({
+                left: 3000,
+                behavior: "smooth"
+             });
+        });
+    </script>
+
+
+    <script>
+        document.getElementById("scrollLeftSiBtn").addEventListener("click", function () {
+            window.scrollBy({
+                left: -3000,
+                behavior: "smooth"
+             });
+        });
+    </script>
+
+    <script>
+        document.getElementById("scrollRightSBtn").addEventListener("click", function () {
+            window.scrollBy({
+                left: 3000,
+                behavior: "smooth"
+             });
+        });
+    </script>
+
+
+    <script>
+        document.getElementById("scrollLeftSBtn").addEventListener("click", function () {
+            window.scrollBy({
+                left: -3000,
+                behavior: "smooth"
+             });
+        });
+    </script>
+
+    <script>
+        document.getElementById("scrollRightSIDEBtn").addEventListener("click", function () {
+            window.scrollBy({
+                left: 3000,
+                behavior: "smooth"
+             });
+        });
+    </script>
+
+
+    <script>
+        document.getElementById("scrollLeftSIDEBtn").addEventListener("click", function () {
+            window.scrollBy({
+                left: -3000,
+                behavior: "smooth"
+             });
+        });
+    </script>
+
+    <script>
+        document.getElementById("scrollRightSIDBtn").addEventListener("click", function () {
+            window.scrollBy({
+                left: 3000,
+                behavior: "smooth"
+             });
+        });
+    </script>
+
+
+    <script>
+        document.getElementById("scrollLeftSIDBtn").addEventListener("click", function () {
+            window.scrollBy({
+                left: -3000,
+                behavior: "smooth"
+             });
+        });
+    </script>
+
+    <script>
+        document.getElementById("scrollRightSIBtn").addEventListener("click", function () {
+            window.scrollBy({
+                left: 3000,
+                behavior: "smooth"
+             });
+        });
+    </script>
+
+
+    <script>
+        document.getElementById("scrollLeftSIBtn").addEventListener("click", function () {
+            window.scrollBy({
+                left: -3000,
+                behavior: "smooth"
+             });
+        });
+    </script>
+
+
+</body>
+</html>
